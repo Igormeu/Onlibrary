@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/log_reg.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./imgs/logofav.png" type="image/png">
+    <title>Login</title>
+</head>
+<body class="login_area">
+    <nav class="top navbar navbar-expand-lg ">
+        <div class="container upperrow">
+            <div class="left">
+                <a class="navbar-brand" id="backhome">
+                    <h2 id="txthome">Seja bem-vindo!</h2>
+                </a>
+            </div>
+            
+            <div class="right navbar-nav ">
+                <ul id="links">
+                    <li><a href="#" target="_blank"><img src="imgs/whatsapp.png" alt="Logo whatsapp"></a></li>
+                    <li><a href="#" target="_blank"><img src="imgs/gmail.png" alt="imagem de uma carta"></a></li>
+                    <li><a href="#" target="_blank"><img src="imgs/instagram.png" alt="Logo instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="imgs/facebook.png" alt="Logo facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container login mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <form method="POST" action="login.php" class="form  p-4">
+                    <div class="form-header">
+                        <a href="index.html"><img  src="imgs/logo.png" alt="Logotipo Onlibrary"></a>
+                        <h2 class="text-left">Login</h2>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Usuário</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pass">Senha</label>
+                        <input type="password" class="form-control" name="password" id="pass" placeholder="Digite a senha" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-block button_log mt-4" id="login">Entrar</button>
+                    
+                    <div class="text-center mt-4" id="moreText">
+                        <p>ou</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="Cadastro.html" id="linkcadastro">Realize já o seu cadastro!</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>   
+
+    <footer class="footer text-center py-3 mt-5">
+        <p>&copy; Onlibrary 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

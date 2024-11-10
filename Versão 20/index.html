@@ -1,0 +1,369 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="./imgs/logofav.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Onlibrary</title>
+</head>
+<body onload="reorderForMobile()">
+    <nav class="top">
+        <div class="upperrow">
+            <div class="left">
+                <h2>Seja bem vindo!</h2>
+            </div>
+            <div class="right">
+                <ul id="links">
+                    <li><a href="https://web.whatsapp.com/" rel="external" target="_blank"><img src="./imgs/whatsapp.png" alt="Logo whatsapp"></a></li>
+                    <li><a href="https://www.gmail.com/" rel="external" target="_blank"><img src="./imgs/gmail.png" alt="Logo Gmail"></a></li>
+                    <li><a href="https://www.instagram.com/" rel="external" target="_blank"><img src="./imgs/instagram.png" alt="Logo instagram"></a></li>
+                    <li><a href="https://pt-br.facebook.com/" rel="external" target="_blank"><img src="./imgs/facebook.png" alt="Logo facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header col-lg-18 col-md-12">
+        <div class="logo text-center text-lg-left">
+            <img id="logo" src="./imgs/logo.png" alt="Logotipo Onlibrary">
+            <h1 id="nomeSite">Onlibrary</h1>
+        </div>
+
+        <div class="search">
+            <input id="searchInput" type="text" name="busca" placeholder="Busque por título ou autor">
+            <a href="#searchResults">
+                <button  onclick="searchBooks()">
+                    <img src="./imgs/lupa.png" alt="lupinha">
+                </button> 
+            </a>
+        </div>
+
+        <div class="login area ">
+            <a href="Login.html"><p id="sing_in">Entrar</p></a>
+            <a href="Cadastro.html"><p id="sing_up">Registrar</p></a>
+        </div>
+    </header>
+
+    <navbar  class="navegacao">
+        <div class="navcont">
+            <a href="galeria.html">Galeria</a>
+            <a href="#footer">Contacte nós</a>
+            <a href="Sobre.html">Sobre nós</a>
+        </div>
+    </navbar>
+    <main>
+        <section id="banner" class="carousel slide" data-bs-ride="carousel">
+
+            <div id="indicadores" class="carousel-indicators">
+                <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+            </div>
+
+            <div id="imagens" class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/Imagem_banner01.png" alt="Banner Onlibrary" class="d-block w-100" id="img_banner">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Imagem_banner02.png" alt="Banner Black Friday" class="d-block w-100" id="img_banner">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Imagem_banner03.png" alt="Banner Publicação de novos livros" class="d-block w-100" id="img_banner">
+                </div>
+            </div>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev" id="button_icon">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next" id="button_icon">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </section>
+            
+        <section class="section" id="booksContainer">
+            <article class="row">
+                <h1 class="sectionTitle">Os melhores livros de Paula Maia</h1>
+                <div class="teste" >
+                    <div class="card book" data-title="De gados e homens" data-author="Paula Maia">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/61nNMyJ1Q3L._SL1024_.jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">De gados e homens</h5>
+                            <p class="card-text authorName">Por Paula Maia</p>
+                            <p class="card-text description">"Edgar Wilson é o protagonista dessa narrativa que se passa dois anos depois da história de Carvão animal. O ex-carvoeiro trabalha em um matadouro de gado, e, embora prefira a criação de suínos, é parte do processo de produção de hambúrgueres que nunca experimentou. "</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/gados-homens-Ana-Paula-Maia/dp/8501404128" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Enterre seus mortos" data-author="Paula Maia">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/914sM98HUAL._SL1500_.jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Enterre seus mortos</h5>
+                        <p class="card-text authorName">Por Paula Maia</p>
+                            <p class="card-text description">"Uma habilidosa mescla de novela policial, faroeste de horror e romance filosófico, escrito por uma das vozes mais originais da literatura brasileira contemporânea. Edgar Wilson é “um homem simples que executa tarefas”."</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Enterre-seus-mortos-Paula-Maia/dp/8535930671/ref=pd_lpo_sccl_1/133-9467198-9771015?pd_rd_w=IytsE&content-id=amzn1.sym.a2197dac-0fbe-4cc8-beca-b52f96ea33d5&pf_rd_p=a2197dac-0fbe-4cc8-beca-b52f96ea33d5&pf_rd_r=18SK5D6MGK69DG1P0GGP&pd_rd_wg=EXBVJ&pd_rd_r=172dde79-e740-4d3d-ac11-ae61cbb65f84&pd_rd_i=8535930671&psc=1" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book"  data-title="Búfalos selvagens" data-author="Paula Maia">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81mEFzYPcSL._SY385_.jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Búfalos selvagens</h5>
+                            <p class="card-text authorName">Por Paula Maia</p>
+                            <p class="card-text description">"Edgar Wilson está de volta ao Matadouro do Milo após a catástrofe que quase erradicou a existência humana."</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/B%C3%BAfalos-selvagens-Ana-Paula-Maia/dp/8535938176/ref=pd_bxgy_thbs_d_sccl_2/133-9467198-9771015?pd_rd_w=RPE66&content-id=amzn1.sym.354403e7-7651-4baa-9581-b12c519004fa&pf_rd_p=354403e7-7651-4baa-9581-b12c519004fa&pf_rd_r=0ZDS85XBGB96DNDPK52R&pd_rd_wg=lXljq&pd_rd_r=5e589dab-6838-427b-8d57-f7168493c6eb&pd_rd_i=8535938176&psc=1" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="De cada quinhentos uma alma" data-author="Paula Maia">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81AoIL+g5pL._SL1500_.jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">De cada quinhentos uma alma</h5>
+                            <p class="card-text authorName">Por Paula Maia</p>
+                            <p class="card-text description">"Mais uma vez, Ana Paula Maia consegue trazer para o centro da narrativa os mais dilacerantes conflitos humanos e explorar com requinte literário as nuances do bem e do mal."</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/cada-quinhentos-uma-alma/dp/8535927093/ref=pd_bxgy_thbs_d_sccl_1/133-9467198-9771015?pd_rd_w=j58dj&content-id=amzn1.sym.354403e7-7651-4baa-9581-b12c519004fa&pf_rd_p=354403e7-7651-4baa-9581-b12c519004fa&pf_rd_r=3857VAHF7FAFPSGZZ0GD&pd_rd_wg=gMEJy&pd_rd_r=c6d92b4b-fb49-4294-a90d-805775aab3fd&pd_rd_i=8535927093&psc=1" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Assim na terra como embaixo da terra" data-author="Paula Maia">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81mlvhRhQXL._SL1500_.jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Assim na terra como embaixo da terra</h5>
+                            <p class="card-text authorName">Por Paula Maia</p>
+                            <p class="card-text description">"Com uma linguagem direta e sem rodeios, Assim na terra como embaixo da terra prende a atenção do leitor logo nas primeiras páginas. "</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Assim-terra-como-embaixo/dp/8501108235/ref=pd_sbs_d_sccl_2_3/133-9467198-9771015?pd_rd_w=22a8P&content-id=amzn1.sym.0645f0a3-04e5-412c-b308-1a45962da814&pf_rd_p=0645f0a3-04e5-412c-b308-1a45962da814&pf_rd_r=SYQJ32EAQY5S0MKG2NHH&pd_rd_wg=uTbXh&pd_rd_r=9fb8f7cb-49b3-4850-9cb0-13fc8b262e21&pd_rd_i=8501108235&psc=1" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Entre rinhas de cachorros e porcos abatidos" data-author="Paula Maia">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/91QvoTn1QJL._SY385_.jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Entre rinhas de cachorros e porcos abatidos</h5>
+                            <p class="card-text authorName">Por Paula Maia</p>
+                            <p class="card-text description">"Com dois romances publicados, a carioca Ana Paula Maia se firmou como uma das mais festejadas autoras da nova literatura brasileira "</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Entre-rinhas-cachorros-porcos-abatidos/dp/8501085286/ref=pd_sbs_d_sccl_2_4/133-9467198-9771015?pd_rd_w=22a8P&content-id=amzn1.sym.0645f0a3-04e5-412c-b308-1a45962da814&pf_rd_p=0645f0a3-04e5-412c-b308-1a45962da814&pf_rd_r=SYQJ32EAQY5S0MKG2NHH&pd_rd_wg=uTbXh&pd_rd_r=9fb8f7cb-49b3-4850-9cb0-13fc8b262e21&pd_rd_i=8501085286&psc=1" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Carvão animal" data-author="Paula Maia">
+                        <div class="bcgimg">
+                            <img src="https://cdn.record.com.br/wp-content/uploads/2019/07/25170227/9788501092236...jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Carvão animal</h5>
+                            <p class="card-text authorName">Por Paula Maia</p>
+                            <p class="card-text description">"Suas palavras moldam uma localidade universal, onde os infernos particulares se descortinam nos fragmentos de diálogos."</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Carv%C3%A3o-animal-Ana-Paula-Maia/dp/8501092231/ref=pd_sbs_d_sccl_2_5/133-9467198-9771015?pd_rd_w=LNFl3&content-id=amzn1.sym.0645f0a3-04e5-412c-b308-1a45962da814&pf_rd_p=0645f0a3-04e5-412c-b308-1a45962da814&pf_rd_r=ESZDC4Z4BYZNW8DZ0JR3&pd_rd_wg=i4Fqh&pd_rd_r=ed0d3d9e-22b7-4c3f-83a8-14ae924b332f&pd_rd_i=8501092231&psc=1" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section" id="booksContainer">
+            <article class="row">
+                <h1 class="sectionTitle">Os melhores livros de Guilianna Domingues</h1>
+                <div class="teste" >
+                    <div class="card book" data-title="Box Duologia Boreal" data-author="Guilianna Domingues">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/91Qp-w8Ro6L._SL1500_.jpg" class="capa card-img-top" alt="Box Duologia Boreal" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Box Duologia Boreal</h5>
+                            <p class="card-text authorName">Por Guilianna Domingues</p>
+                            <p class="card-text description">"Agora reunida em um box, conheça a duologia Boreal, estreia de fantasia sáfica de Giu Domingues! Com caixa ilustrada por Taíssa Maia."</p>
+                        </div>
+
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Box-Duologia-Boreal-Giu-Domingues/dp/8501306606/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1ksB5bQgzYEdBuCLePhQZfNuA3DKLxwkmSUT3EgGul_3piSTrRjZ97jZSmpS9rJB.ppNZ4awF5F7R6rvpu2_BE6JDYVWmqCj7JAL8csy977k&dib_tag=se&qid=1729956717&refinements=p_27%3AGiu+Domingues&s=books&sr=1-2" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Luzes do Norte" data-author="Guilianna Domingues">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/91LStwpEtgL._SL1500_.jpg" class="capa card-img-top" alt="Capa Luzes do Norte" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Luzes do Norte</h5>
+                            <p class="card-text authorName">Por Guilianna Domingues</p>
+                            <p class="card-text description">"Luzes do Norte é o livro de estreia de Giulianna Domingues, uma aventura intensa e cheia de reviravoltas, com uma protagonista que se recusa a jogar pelas regras dos outros. Entre ursos assustadores, florestas nevadas, mistérios e intrigas, Dimitria tem uma única missão: proteger Aurora van Vintermer. Custe o que custar."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Luzes-do-Norte-Giu-Domingues-ebook/dp/B09V3925M2/ref=sr_1_4?dib=eyJ2IjoiMSJ9.1ksB5bQgzYEdBuCLePhQZfNuA3DKLxwkmSUT3EgGul_3piSTrRjZ97jZSmpS9rJB.ppNZ4awF5F7R6rvpu2_BE6JDYVWmqCj7JAL8csy977k&dib_tag=se&qid=1729956717&refinements=p_27%3AGiu+Domingues&s=books&sr=1-4" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Sombras do Sul" data-author="Guilianna Domingues">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/71ZnL5izvtL._SL1500_.jpg" class="capa card-img-top" alt="Capa Sombras do Sul" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Sombras do Sul</h5>
+                            <p class="card-text authorName">Por Guilianna Domingues</p>
+                            <p class="card-text description">"Em Sombras do Sul , conclusão eletrizante da duologia, uma maldição faz com que Aurora e Dimitria deixem Nuremsalem em busca de respostas no sul."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Finalmente-BRINDES-Arthur-Elayne-Malvavisco/dp/8501306835/ref=sr_1_3?dib=eyJ2IjoiMSJ9.1ksB5bQgzYEdBuCLePhQZfNuA3DKLxwkmSUT3EgGul_3piSTrRjZ97jZSmpS9rJB.ppNZ4awF5F7R6rvpu2_BE6JDYVWmqCj7JAL8csy977k&dib_tag=se&qid=1729956717&refinements=p_27%3AGiu+Domingues&s=books&sr=1-3" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Sonho de uma tarde de verão" data-author="Guilianna Domingues">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/61xsOrnwZML._SL1405_.jpg" class="capa card-img-top" alt="Sonho de uma tarde de verão" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Sonho de uma tarde de verão</h5>
+                            <p class="card-text authorName">Por Guilianna Domingues</p>
+                            <p class="card-text description">"Um dos livros que compõe a maravilhosa coletânea boreal de Gui Domingues"</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="hhttps://www.amazon.com.br/Box-Duologia-Boreal-Giu-Domingues/dp/8501306606/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1ksB5bQgzYEdBuCLePhQZfNuA3DKLxwkmSUT3EgGul_3piSTrRjZ97jZSmpS9rJB.ppNZ4awF5F7R6rvpu2_BE6JDYVWmqCj7JAL8csy977k&dib_tag=se&qid=1729956717&refinements=p_27%3AGiu+Domingues&s=books&sr=1-2"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Canção dos Ossos" data-author="Guilianna Domingues">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/71LSxg4HTtL._SY385_.jpg" class="capa card-img-top" alt="Capa Canção dos Ossos" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Canção dos Ossos</h5>
+                            <p class="card-text authorName">Por Guilianna Domingues</p>
+                            <p class="card-text description">"Da incrível imaginação de Giu Domingues, um dos maiores nomes da fantasia nacional, Canção dos Ossos é um romance gótico e sáfico, em que a magia sai das melodias para viver entre as palavras. Feche os olhos e deixe a música te guiar."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Can%C3%A7%C3%A3o-dos-Ossos-BRINDES-Idioma/dp/8501307122/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1ksB5bQgzYEdBuCLePhQZfNuA3DKLxwkmSUT3EgGul_3piSTrRjZ97jZSmpS9rJB.ppNZ4awF5F7R6rvpu2_BE6JDYVWmqCj7JAL8csy977k&dib_tag=se&qid=1729956717&refinements=p_27%3AGiu+Domingues&s=books&sr=1-1" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="O Segredo do CEO" data-author="Guilianna Domingues">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81M0iJNMjmL._SY385_.jpg" class="capa card-img-top" alt="Capa O Segredo do CEO" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">O Segredo do CEO</h5>
+                            <p class="card-text authorName">Por Guilianna Domingues</p>
+                            <p class="card-text description">"Bernardo Santana tem um segredo. Mais de um, na verdade: o belo CEO da PetShow é um lobisomem, e pior que isso, apaixonado por seu melhor amigo e assessor."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Segredo-do-CEO-Giulianna-Domingues-ebook/dp/B09F4N3Z85?ref_=ast_author_dp" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Finalmente 15" data-author="Guilianna Domingues">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/810R+iBzX0L._SL1500_.jpg" class="capa card-img-top" alt="Capa Finalmente 15" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Finalmente 15</h5>
+                            <p class="card-text authorName">Por Guilianna Domingues</p>
+                            <p class="card-text description">"Fazer 15 anos é um marco para qualquer um, até para uma editora. Em comemoração ao aniversário da Galera Record..."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" href="https://www.amazon.com.br/Finalmente-BRINDES-Arthur-Elayne-Malvavisco/dp/8501306835/ref=sr_1_3?dib=eyJ2IjoiMSJ9.1ksB5bQgzYEdBuCLePhQZfNuA3DKLxwkmSUT3EgGul_3piSTrRjZ97jZSmpS9rJB.ppNZ4awF5F7R6rvpu2_BE6JDYVWmqCj7JAL8csy977k&dib_tag=se&qid=1729956717&refinements=p_27%3AGiu+Domingues&s=books&sr=1-3" target="_blank" class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section" id="searchResults" style="display: none;">
+            <article class="row">
+                <h1 class="sectionTitle">Resultados da busca</h1>
+                <div id="searchResultsContainer" class="teste">
+
+                </div>
+                <p id="notFoundMessage" style="display: none;">Nenhum livro ou autor encontrado.</p>
+                <a href="index.html" rel="internal" id="sairBusca"><p>Retornar a Página Princial</p></a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="contatos">
+                <h3>Nossos Contatos</h3>
+                <h4>Telefone</h4>
+                <p>Fixo: (85) 1234-5678</p>
+                <p>Whatsapp: (85) 98765-4321</p>
+                <h4>Email</h4>
+                <p>suporte@Onlibrary.com.br</p>
+            </div>
+            <div class="redes">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://pt-br.facebook.com/" target="_blank" rel="external"><img src="imgs/facebook.png" alt="Facebook icon"></a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank" rel="external"><img src="imgs/whatsapp.png" alt="WhatsApp icon"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="external"><img src="imgs/instagram.png" alt="Instagram icon"></a></li>
+                    <li><a href="https://www.gmail.com/" target="_blank" rel="external"><img src="imgs/gmail.png" alt="E-mail icon"></a></li>
+                </ul>
+            </div>
+            <div class="form_footer">
+                <h3>Entre em Contato</h3>
+                <form>
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="text" placeholder="Seu Telefone" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <p class="direitos">@Copyright 2024. Todos os direitos reservados.</p>
+
+        <a id="link-topo" href="#" rel="internal">&#9650;</a>
+    </footer>
+
+    <script src="js/mobile.js"></script>
+    <script src="js/script .js"></script>
+
+</body>
+</html>

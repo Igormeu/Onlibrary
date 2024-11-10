@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="./imgs/logofav.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Onlibrary - Galeria</title>
+</head>
+<body onload="reorderForMobile()">
+    <nav class="top">
+        <div class="upperrow">
+            <div class="left">
+                <h2>Seja bem vindo!</h2>
+            </div>
+            <div class="right">
+                <ul id="links">
+                    <li><a href="#" target="_blank"><img src="./imgs/whatsapp.png" alt="Logo whatsapp"></a></li>
+                    <li><a href="#" target="_blank"><img src="./imgs/gmail.png" alt="imagem de uma carta"></a></li>
+                    <li><a href="#" target="_blank"><img src="./imgs/instagram.png" alt="Logo instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="./imgs/facebook.png" alt="Logo facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header col-lg-18 col-md-12">
+        <div class="logo text-center text-lg-left">
+            <a href="index.html"><img id="logo" src="./imgs/logo.png" alt="Logotipo Onlibrary"></a>
+            <h1 id="nomeSite">Onlibrary</h1>
+            
+        </div>
+
+        <div class="search">
+            <input id="searchInput" type="text" name="busca" placeholder="Busque por título ou autor">
+            <a href="#searchResults">
+                <button  onclick="searchBooks()">
+                    <img src="./imgs/lupa.png" alt="lupinha">
+                </button> 
+            </a>
+        </div>
+
+        <div class="login area ">
+            <a href="Login.html"><p id="sing_in">Entrar</p></a>
+            <a href="Cadastro.html"><p id="sing_up">Registrar</p></a>
+        </div>
+    </header>
+
+    <navbar  class="navegacao">
+        <div class="navcont">
+            <a href="index.html">Início</a>
+            <a href="#footer">Contacte nós</a>
+            <a href="Sobre.html">Sobre nós</a>
+        </div>
+    </navbar>
+
+    <main>
+        <section class="section" id="booksContainer">
+            <article class="row">
+                <div class="teste">
+                    <div class="card book" data-title="Obsessão pelo cliente" data-author="Colin Bryar">
+                        <div class="bcgimg">
+                            <img src="https://livrariacultura.vteximg.com.br/arquivos/ids/156259429/2112336561.jpg?v=638212088287230000" class="capa card-img-top" alt="Obsessão pelo cliente" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Obsessão pelo cliente</h5>
+                            <p class="card-text authorName">Por Colin Bryar</p>
+                            <p class="card-text description">Histórias, segredos e insights exclusivos de dentro da Amazon.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.livrariacultura.com.br/obsessao-pelo-cliente-2112336561/p"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Eu e Esse meu Coração" data-author="C. C. Hunter">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81w-GCfqtjL._SY466_.jpg" class="capa card-img-top" alt="Eu e Esse meu Coração" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Eu e Esse meu Coração</h5>
+                            <p class="card-text authorName">Por C. C. Hunter</p>
+                            <p class="card-text description">"Leah MacKenzie, de 17 anos, não tem coração. O que a mantém viva é um coração artificial que ela carrega dentro de uma mochila."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Eu-esse-meu-cora%C3%A7%C3%A3o-Hunter/dp/8555391210/ref=sr_1_46?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3SE2M1KIF2I1M&dib=eyJ2IjoiMSJ9.1LC0ZimDHe8VQbGp3uL_UPp79Qem-oKm2-5g2cuHjgaHwwgaYpcb7S1HhikGFXccjVGIZm44YSeipNeYU_cPdEcimQz_jz-SShx5VoT8uWfelkAytw-iHbhJke30kAv2icKNb9EpuKAIuRfg-JdATuBUPeToRh8qK6y0fDCeo_DOSlNry4a9RqOaw9ChIok4njoWLIfNCsOUqtHOSQNH9sKr0Vk2dPn1UMTp-2ZCidIgzex4TAFvNJNz--xnH9iA9tINpPqwdKbaUs9igCdNyty_6MqtQaPiNJLRlyDCILU.kYNaNTzdsURK-6xCiu20a93NeUVAHESh4qwmKSPcKkE&dib_tag=se&keywords=livros&qid=1730684163&sprefix=livros%2Caps%2C167&sr=8-46"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="É sobre amor" data-author="Jenna Ortega">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/710eJauPiyL._SY425_.jpg" class="capa card-img-top" alt="É sobre amor" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">É sobre amor</h5>
+                            <p class="card-text authorName">Por Jenna Ortega</p>
+                            <p class="card-text description">Reflexões para o coração e a alma.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/%C3%89-sobre-amor-Reflex%C3%B5es-cora%C3%A7%C3%A3o/dp/6555323671/ref=sr_1_49?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3SE2M1KIF2I1M&dib=eyJ2IjoiMSJ9.1LC0ZimDHe8VQbGp3uL_UPp79Qem-oKm2-5g2cuHjgaHwwgaYpcb7S1HhikGFXccjVGIZm44YSeipNeYU_cPdEcimQz_jz-SShx5VoT8uWfelkAytw-iHbhJke30kAv2icKNb9EpuKAIuRfg-JdATuBUPeToRh8qK6y0fDCeo_DOSlNry4a9RqOaw9ChIok4njoWLIfNCsOUqtHOSQNH9sKr0Vk2dPn1UMTp-2ZCidIgzex4TAFvNJNz--xnH9iA9tINpPqwdKbaUs9igCdNyty_6MqtQaPiNJLRlyDCILU.kYNaNTzdsURK-6xCiu20a93NeUVAHESh4qwmKSPcKkE&dib_tag=se&keywords=livros&qid=1730684163&sprefix=livros%2Caps%2C167&sr=8-49"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Hábitos Atômicos" data-author="James Clear">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81eT2pjx4jL._SY425_.jpg" class="capa card-img-top" alt="Hábitos Atômicos" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Hábitos Atômicos</h5>
+                            <p class="card-text authorName">Por James Clear</p>
+                            <p class="card-text description">Um Método Fácil e Comprovado de Criar Bons Hábitos e se Livrar dos Maus.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/H%C3%A1bitos-At%C3%B4micos-M%C3%A9todo-Comprovado-Livrar/dp/8550807567?pd_rd_w=uZpbr&content-id=amzn1.sym.299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_p=299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_r=BB777E1QC1D06PAKJ3NT&pd_rd_wg=fLK92&pd_rd_r=9fdbd884-8fa3-415a-8054-fc7ab6ee41ce&pd_rd_i=8550807567&ref_=books-storefront-test_0_8550807567"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Em rota de colisão" data-author="Bal Khabra">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/71PJ9yPc9nL._SY425_.jpg" class="capa card-img-top" alt="Em rota de colisão" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Em rota de colisão</h5>
+                            <p class="card-text authorName">Por Bal Khabra</p>
+                            <p class="card-text description">"Uma estudante exemplar, um atleta de hóquei e uma conexão quente o suficiente para derreter uma pista de gelo."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Em-rota-colis%C3%A3o-Bal-Khabra/dp/658534877X?pd_rd_w=CXP4C&content-id=amzn1.sym.d9a5e119-707f-4795-b7ed-38b837aead3a&pf_rd_p=d9a5e119-707f-4795-b7ed-38b837aead3a&pf_rd_r=BB777E1QC1D06PAKJ3NT&pd_rd_wg=fLK92&pd_rd_r=9fdbd884-8fa3-415a-8054-fc7ab6ee41ce&pd_rd_i=658534877X"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section" id="booksContainer">
+            <article class="row">
+                <div class="teste">
+                    <div class="card book" data-title="Vidas secas" data-author="Graciliano Ramos">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81XM08cKsYL._SY425_.jpg" class="capa card-img-top" alt="Vidas secas" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Vidas secas</h5>
+                            <p class="card-text authorName">Por Graciliano Ramos</p>
+                            <p class="card-text description">O sertão ia pegar fogo.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Vidas-secas-Graciliano-Ramos/dp/6580210885?pd_rd_w=CXP4C&content-id=amzn1.sym.d9a5e119-707f-4795-b7ed-38b837aead3a&pf_rd_p=d9a5e119-707f-4795-b7ed-38b837aead3a&pf_rd_r=BB777E1QC1D06PAKJ3NT&pd_rd_wg=fLK92&pd_rd_r=9fdbd884-8fa3-415a-8054-fc7ab6ee41ce&pd_rd_i=6580210885"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Em Nome do Povo" data-author="Bruno Perini">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/91Zffgxa4YL._SY425_.jpg" class="capa card-img-top" alt="Em Nome do Povo" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Em Nome do Povo</h5>
+                            <p class="card-text authorName">Por Bruno Perini</p>
+                            <p class="card-text description">Como o Casamento Entre Estado e Moeda te Deixa Mais Pobre.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Em-Nome-Povo-Casamento-Estado/dp/6550474795?pd_rd_w=uZpbr&content-id=amzn1.sym.299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_p=299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_r=BB777E1QC1D06PAKJ3NT&pd_rd_wg=fLK92&pd_rd_r=9fdbd884-8fa3-415a-8054-fc7ab6ee41ce&pd_rd_i=6550474795&ref_=books-storefront-test_0_6550474795"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="O pobre de direita" data-author="Jessé Souza">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/816PcIDcPJL._SY425_.jpg" class="capa card-img-top" alt="O pobre de direita" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">O pobre de direita</h5>
+                            <p class="card-text authorName">Por Jessé Souza</p>
+                            <p class="card-text description">A vingança dos bastardos.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/pobre-direita-vingan%C3%A7a-dos-bastardos/dp/6558021552?pd_rd_w=uZpbr&content-id=amzn1.sym.299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_p=299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_r=BB777E1QC1D06PAKJ3NT&pd_rd_wg=fLK92&pd_rd_r=9fdbd884-8fa3-415a-8054-fc7ab6ee41ce&pd_rd_i=6558021552&ref_=books-storefront-test_0_6558021552"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="A coragem de ser imperfeito" data-author="Brené Brown">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/61rRRbfINJL._SY425_.jpg" class="capa card-img-top" alt="A coragem de ser imperfeito" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">A coragem de ser imperfeito</h5>
+                            <p class="card-text authorName">Por Brené Brown</p>
+                            <p class="card-text description">"Como aceitar a própria vulnerabilidade, vencer a vergonha e ousar ser quem você é"</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/coragem-ser-imperfeito-Bren%C3%A9-Brown/dp/8543104335?pd_rd_w=uZpbr&content-id=amzn1.sym.299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_p=299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_r=BB777E1QC1D06PAKJ3NT&pd_rd_wg=fLK92&pd_rd_r=9fdbd884-8fa3-415a-8054-fc7ab6ee41ce&pd_rd_i=8543104335&ref_=books-storefront-test_0_8543104335"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="A Biblioteca da Meia-Noite" data-author="Matt Haig">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81iqH8dpjuL._SY425_.jpg" class="capa card-img-top" alt="A Biblioteca da Meia-Noite" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">A Biblioteca da Meia-Noite</h5>
+                            <p class="card-text authorName">Por Matt Haig</p>
+                            <p class="card-text description">Um romance incrível que fala dos infinitos rumos que a vida pode tomar e da busca incessante pelo rumo certo.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Biblioteca-Meia-Noite-Matt-Haig/dp/6558380544?pd_rd_w=uZpbr&content-id=amzn1.sym.299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_p=299ebb68-0d18-45e5-9df3-77a2f11ee7f8&pf_rd_r=BB777E1QC1D06PAKJ3NT&pd_rd_wg=fLK92&pd_rd_r=9fdbd884-8fa3-415a-8054-fc7ab6ee41ce&pd_rd_i=6558380544&ref_=books-storefront-test_0_6558380544"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section" id="booksContainer">
+            <article class="row">
+                <div class="teste">
+                    <div class="card book" data-title="Dias perfeitos" data-author="Raphael Montes">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/911dJOlJkBL._SY425_.jpg" class="capa card-img-top" alt="Dias perfeitos" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Dias perfeitos</h5>
+                            <p class="card-text authorName">Por Raphael Montes</p>
+                            <p class="card-text description"> Dias perfeitos narra uma história de amor obsessivo e paranoico.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Dias-perfeitos-Raphael-Montes/dp/8535924019/ref=sr_1_21?dib=eyJ2IjoiMSJ9.ujfhZ1fiddUUIIh_56QVrlGRBl5PhAgXpJWG9ydCo-adFldPApSLd0N2QfBqJdAG-9CMZn--Zf5RaYlEH6yKbwWay9O7rCtsIqMjzOMLBeSws2J6Rq4RX_8ve6KzW43bHo60DMabA8qe6rUKrG5Se6yd-dbEp2L5ueflFh76oIs.N18s4ckTEXNMVb9rCj2XdlwvPt4XasuUuguehXWNGT8&dib_tag=se&qid=1730686433&s=books&sr=1-21"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="A foca famosa" data-author="Sônia Junqueira">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/51Fxji2eG7L._SY425_.jpg" class="capa card-img-top" alt="A foca famosa" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">A foca famosa</h5>
+                            <p class="card-text authorName">Por Sônia Junqueira</p>
+                            <p class="card-text description">"A foca Rosa tem talento, é bonita e famosa. Para que tudo fique perfeito, só falta mesmo arrumar um namorado."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Foca-Famosa-Sonia-Junqueira/dp/8508113552/ref=sr_1_25?dib=eyJ2IjoiMSJ9.ujfhZ1fiddUUIIh_56QVrlGRBl5PhAgXpJWG9ydCo-adFldPApSLd0N2QfBqJdAG-9CMZn--Zf5RaYlEH6yKbwWay9O7rCtsIqMjzOMLBeSws2J6Rq4RX_8ve6KzW43bHo60DMabA8qe6rUKrG5Se6yd-dbEp2L5ueflFh76oIs.N18s4ckTEXNMVb9rCj2XdlwvPt4XasuUuguehXWNGT8&dib_tag=se&qid=1730686433&s=books&sr=1-25"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Mãos de luz" data-author="Barbara Ann Brennan">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81yW1Gqi2ZL._SY425_.jpg" class="capa card-img-top" alt="Mãos de luz" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Mãos de luz</h5>
+                            <p class="card-text authorName">Por Barbara Ann Brennan</p>
+                            <p class="card-text description">"Um Guia Para a Cura Através do Campo de Energia Humano"</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/M%C3%A3os-luz-atrav%C3%A9s-energia-humano/dp/853151990X/ref=sr_1_52?dib=eyJ2IjoiMSJ9.GcvcY3_P8przFyzaD_-2kI7a5P9aBvV06V3PEsCUcuQTPRXggHLDrI6uyotMw3081L0bAMOhF0R0kl7n5yacfQ.ImtTNRbumCHNHxBvon18cyXCDK2jsFSzaO_ZkRbLBNI&dib_tag=se&qid=1730686816&s=books&sr=1-52"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Hamlet" data-author="William Shakespeare">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81D314P1V9L._SY425_.jpg" class="capa card-img-top" alt="Hamlet" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Hamlet</h5>
+                            <p class="card-text authorName">Por William Shakespeare</p>
+                            <p class="card-text description">"Um jovem príncipe se reúne com o fantasma de seu pai, que alega que seu próprio irmão, agora casado com sua viúva, o assassinou."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Hamlet-William-Shakespeare/dp/858285014X/ref=sr_1_53?dib=eyJ2IjoiMSJ9.GcvcY3_P8przFyzaD_-2kI7a5P9aBvV06V3PEsCUcuQTPRXggHLDrI6uyotMw3081L0bAMOhF0R0kl7n5yacfQ.ImtTNRbumCHNHxBvon18cyXCDK2jsFSzaO_ZkRbLBNI&dib_tag=se&qid=1730686816&s=books&sr=1-53"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="O urso rabugento" data-author="Nick Bland">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/91QJI9iGjLL._SY425_.jpg" class="capa card-img-top" alt="O urso rabugento" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">O urso rabugento</h5>
+                            <p class="card-text authorName">Por Nick Bland</p>
+                            <p class="card-text description">O encontro de quatro amigos com um urso muito rabugento.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Urso-Rabugento-Nick-Bland/dp/8574124729/ref=sr_1_52?dib=eyJ2IjoiMSJ9.EF-6R11KVW-78ZVQq_glMJgslmW4bcgZpjlbExsfPFDcbib27DniaTQTGACGbptcrmb7zejztU1nV0SVfLrCcnxUByOA0bM1tTDB_eDVZEKAH41G0Gc1L88mldJgVMlupILsbx6ATsvSQO3MMhmywejmc3WbKgUuHq6om2f9XEo.cVh18Y7oZfdW2Y2Rk4zqK5zbwCLupulszQ3wfzmNXt4&dib_tag=se&qid=1730686816&s=books&sr=1-52"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section" id="booksContainer">
+            <article class="row">
+                <div class="teste">
+                    <div class="card book" data-title="O Senhor dos Anéis: A Sociedade do Anel" data-author="J.R.R. Tolkien">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81hCVEC0ExL._SY425_.jpg" class="capa card-img-top" alt="O Senhor dos Anéis: A Sociedade do Anel" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">O Senhor dos Anéis: A Sociedade do Anel</h5>
+                            <p class="card-text authorName">Por J.R.R. Tolkien</p>
+                            <p class="card-text description">A sociedade do Anel.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Senhor-dos-An%C3%A9is-Sociedade-Anel/dp/8595084750/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=TCRFMWG9G72D&dib=eyJ2IjoiMSJ9.N7TYWPa6MbkMK5nXBtdK0X4R5HyPmNK_nGcSJ-PbBKHy_fVpWNs2IAjSJs0-sdC4WS-n-qFzsRt0lHKfHK0MihTr4y6PYYByaI0LoDzVMFVrS7HjKBPKXIrYTipF0KhAdGCrUNPTRx_jGidqBuhMSm9dF8r0WkFFFHiORJK4yhKkH8HYwuvBcyQXTBr8qwfG4wU2o3cbsow7OwFFF6udMD13NdzWbDhbfNAPAAYC_nU.H0gY7IAwb6nNq82nR8hj_fj7O4K9fHY4As8vcRCb6R4&dib_tag=se&keywords=senhor+dos+aneis&qid=1730687433&s=books&sprefix=senhor+dos+anei%2Cstripbooks%2C145&sr=1-4"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="O Senhor dos Anéis: As duas torres" data-author="J.R.R. Tolkien">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81lQ5N0QwJL._SY425_.jpg" class="capa card-img-top" alt="O Senhor dos Anéis: As duas torres" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">O Senhor dos Anéis: As duas torres</h5>
+                            <p class="card-text authorName">Por J.R.R. Tolkien</p>
+                            <p class="card-text description">As duas torres.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Senhor-dos-An%C3%A9is-duas-torres/dp/8595084769/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=TCRFMWG9G72D&dib=eyJ2IjoiMSJ9.N7TYWPa6MbkMK5nXBtdK0X4R5HyPmNK_nGcSJ-PbBKHy_fVpWNs2IAjSJs0-sdC4WS-n-qFzsRt0lHKfHK0MihTr4y6PYYByaI0LoDzVMFVrS7HjKBPKXIrYTipF0KhAdGCrUNPTRx_jGidqBuhMSm9dF8r0WkFFFHiORJK4yhKkH8HYwuvBcyQXTBr8qwfG4wU2o3cbsow7OwFFF6udMD13NdzWbDhbfNAPAAYC_nU.H0gY7IAwb6nNq82nR8hj_fj7O4K9fHY4As8vcRCb6R4&dib_tag=se&keywords=senhor+dos+aneis&qid=1730687433&s=books&sprefix=senhor+dos+anei%2Cstripbooks%2C145&sr=1-10"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="O Senhor dos Anéis: O retorno do rei" data-author="J.R.R. Tolkien">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/71+4uDgt8JL._SY425_.jpg" class="capa card-img-top" alt="O Senhor dos Anéis: O retorno do rei" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">O Senhor dos Anéis: O retorno do rei</h5>
+                            <p class="card-text authorName">Por J.R.R. Tolkien</p>
+                            <p class="card-text description">O retorno do rei.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Senhor-dos-An%C3%A9is-retorno-rei/dp/8595084777/ref=sr_1_15?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=TCRFMWG9G72D&dib=eyJ2IjoiMSJ9.N7TYWPa6MbkMK5nXBtdK0X4R5HyPmNK_nGcSJ-PbBKHy_fVpWNs2IAjSJs0-sdC4WS-n-qFzsRt0lHKfHK0MihTr4y6PYYByaI0LoDzVMFVrS7HjKBPKXIrYTipF0KhAdGCrUNPTRx_jGidqBuhMSm9dF8r0WkFFFHiORJK4yhKkH8HYwuvBcyQXTBr8qwfG4wU2o3cbsow7OwFFF6udMD13NdzWbDhbfNAPAAYC_nU.H0gY7IAwb6nNq82nR8hj_fj7O4K9fHY4As8vcRCb6R4&dib_tag=se&keywords=senhor+dos+aneis&qid=1730687433&s=books&sprefix=senhor+dos+anei%2Cstripbooks%2C145&sr=1-15"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="A Queda de Númenor" data-author="J.R.R. Tolkien">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/81UTnMriJNL._SY425_.jpg" class="capa card-img-top" alt="A Queda de Númenor" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">A Queda de Númenor</h5>
+                            <p class="card-text authorName">Por J.R.R. Tolkien</p>
+                            <p class="card-text description">"Os escritos de J.R.R. Tolkien sobre a Segunda Era da Terra-média reunidos pela primeira vez em um único volume."</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Queda-N%C3%BAmenor-outros-Segunda-Terra-m%C3%A9dia/dp/6555113987/ref=sr_1_2?crid=LJCQA5EM1LXI&dib=eyJ2IjoiMSJ9.9_Q42pa6MvzCGAXXbf6qv1PdTaFcWG2TtR_xZmaGrhR-h2AFbVR_naj03DCHK-3fxI3LvTiDmnGJq_rOdmcOn3u55Ruw81RoIA7lr5RYYipr2WdtlwpMaJrqB-AwXFgfWmXMFhTqlO_e7_S-jYaRrKChOHvZiWQhVxSGdTl51HfIfNjOe33jEFfoGiBcoiGYL9l_bhw3uWzmYxRbiV6ajR0eIuEwQcZADGb3uxdPmfA.X13LVQRtO5UuYJavBqY55ct02gctsjOHmJecQ5ySiho&dib_tag=se&keywords=jrr+tolkien&qid=1730687783&s=books&sprefix=jrr+to%2Cstripbooks%2C137&sr=1-2"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+
+                    <div class="card book" data-title="Os filhos de Húrin" data-author="J.R.R. Tolkien">
+                        <div class="bcgimg">
+                            <img src="https://m.media-amazon.com/images/I/91tO3AZhkcL._SY425_.jpg" class="capa card-img-top" alt="Os filhos de Húrin" loading="lazy">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title bookTitle">Os filhos de Húrin</h5>
+                            <p class="card-text authorName">Por J.R.R. Tolkien</p>
+                            <p class="card-text description">O mais poderoso guerreiro que já existiu na Terra-média fora Húrin, cujo orgulho era tão grande quanto sua força física.</p>
+                        </div>
+                        <div class="linkBtn">
+                            <a rel="external" target="_blank" href="https://www.amazon.com.br/Os-filhos-H%C3%BArin-J-R-R-Tolkien/dp/8595085692/ref=sr_1_3?crid=LJCQA5EM1LXI&dib=eyJ2IjoiMSJ9.9_Q42pa6MvzCGAXXbf6qv1PdTaFcWG2TtR_xZmaGrhR-h2AFbVR_naj03DCHK-3fxI3LvTiDmnGJq_rOdmcOn3u55Ruw81RoIA7lr5RYYipr2WdtlwpMaJrqB-AwXFgfWmXMFhTqlO_e7_S-jYaRrKChOHvZiWQhVxSGdTl51HfIfNjOe33jEFfoGiBcoiGYL9l_bhw3uWzmYxRbiV6ajR0eIuEwQcZADGb3uxdPmfA.X13LVQRtO5UuYJavBqY55ct02gctsjOHmJecQ5ySiho&dib_tag=se&keywords=jrr+tolkien&qid=1730687783&s=books&sprefix=jrr+to%2Cstripbooks%2C137&sr=1-3"  class="linkSell btn btn-primary ">Compre já</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section" id="searchResults" style="display: none;">
+            <article class="row">
+                <h1 class="sectionTitle">Resultados da busca</h1>
+                <div id="searchResultsContainer" class="teste">
+
+                </div>
+                <p id="notFoundMessage" style="display: none;">Nenhum livro ou autor encontrado.</p>
+                <a href="galeria.html" rel="internal" id="sairBusca"><p>Sair da busca</p></a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="contatos">
+                <h3>Nossos Contatos</h3>
+                <h4>Telefone</h4>
+                <p>Fixo: (85) 1234-5678</p>
+                <p>Whatsapp: (85) 98765-4321</p>
+                <h4>Email</h4>
+                <p>suporte@Onlibrary.com.br</p>
+            </div>
+            <div class="redes">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://pt-br.facebook.com/" target="_blank" rel="external"><img src="imgs/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank" rel="external"><img src="imgs/whatsapp.png" alt="WhatsApp"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="external"><img src="imgs/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.gmail.com/" target="_blank" rel="external"><img src="imgs/gmail.png" alt="E-mail"></a></li>
+                </ul>
+            </div>
+            <div class="form_footer">
+                <h3>Entre em Contato</h3>
+                <form>
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="text" placeholder="Seu Telefone" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <p class="direitos">@Copyright 2024. Todos os direitos reservados.</p>
+
+        <a id="link-topo" href="#" rel="internal">&#9650;</a>
+    </footer>
+
+    <script src="js/mobile.js"></script>
+    <script src="js/script .js"></script>
+    
+</body>
+</html>

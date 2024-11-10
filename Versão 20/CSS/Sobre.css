@@ -1,0 +1,81 @@
+.cabecalho-site {
+    background: #b69f8a; 
+    color: rgb(255, 255, 255);
+    padding: 30px 0;                                    
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.conteudo-principal {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.secao {
+    margin-bottom: 20px;
+}
+
+.titulo {
+    color: #333; 
+    margin-top: 40px;
+    border-bottom: 2px solid #b69f8a; 
+    padding-bottom: 10px;
+    border-radius: 8px;  
+}
+
+.conteudo, p, ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.rodape-site {
+    text-align: center;
+    padding: 15px 0;
+    background: #b69f8a; 
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #b69f8a; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #333; 
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 5px solid #b69f8a;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #666;
+}
+
+blockquote footer {
+    font-size: 0.9em;
+    color: #333;
+    text-align: right;
+}
+
+.header{
+    margin: 1rem 0rem 1.5rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}

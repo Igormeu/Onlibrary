@@ -1,0 +1,171 @@
+/* Estilos gerais para footer fixo no final da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EBDF;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+.top {
+    background: #403E3B;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.upperrow {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.left h2 {
+    background-color: #BFBAB0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 10pt;
+    margin: 2px 0;
+    box-shadow: 0 0 5px 0.5px rgba(13, 13, 13, 0.658);
+}
+
+#backhome {
+    text-decoration: none;
+    color: #0D0D0D;
+    font-weight: lighter;
+}
+
+.right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+#links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#links img {
+    filter: invert(100%);
+    width: 15px;
+    margin: 0 10px;
+}
+
+form{
+    background-color: #8C8981;
+    border-radius: 15px ;
+}
+
+
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.form-header > h2 {
+    color: #0D0D0D;
+    font-weight: 600;
+    font-size: 16pt;
+    margin: 0;
+    padding-left: 1rem; 
+    border-left: 2px solid #0D0D0D; 
+}
+
+.form-header > a > img{
+    width: 3rem;
+    margin: 0px 2rem 0px 0px;
+}
+
+.form-group > input{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding: 8px;
+    color: #403E3B;
+}
+
+.form-group > label{
+    color: #0D0D0D;
+    font-size: 12pt;
+    font-weight: 350;
+}
+
+.form-group > input::placeholder{
+    color: #8C8981;
+}
+
+.container, .cadastro, .login {
+    flex: 1;
+}
+
+.button_log{
+    background-color: #0D0D0D !important;
+    color: #F2EBDF !important; 
+}
+    
+
+#linkcadastro,#moreText{
+    color: #0D0D0D;
+}
+
+.sing_in,.login_area{
+    background-color: #F2EBDF;
+}
+
+.footer {
+    background-color: #403E3B; /* Mantém o estilo leve para combinar com Bootstrap */
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer > p {
+    color: #F2EBDF;
+    font-weight: 400;
+}
+
+
+/* Color Theme Swatches in Hex */
+.Livraria-Eiffel-Brand-Identity-1-hex { color: #8C8981; }
+.Livraria-Eiffel-Brand-Identity-2-hex { color: #403E3B; }
+.Livraria-Eiffel-Brand-Identity-3-hex { color: #F2EBDF; }
+.Livraria-Eiffel-Brand-Identity-4-hex { color: #BFBAB0; }
+.Livraria-Eiffel-Brand-Identity-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Livraria-Eiffel-Brand-Identity-1-rgba { color: rgba(140, 137, 129, 1); }
+.Livraria-Eiffel-Brand-Identity-2-rgba { color: rgba(63, 62, 58, 1); }
+.Livraria-Eiffel-Brand-Identity-3-rgba { color: rgba(242, 235, 222, 1); }
+.Livraria-Eiffel-Brand-Identity-4-rgba { color: rgba(191, 185, 175, 1); }
+.Livraria-Eiffel-Brand-Identity-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Livraria-Eiffel-Brand-Identity-1-hsla { color: hsla(44, 4, 52, 1); }
+.Livraria-Eiffel-Brand-Identity-2-hsla { color: hsla(44, 4, 24, 1); }
+.Livraria-Eiffel-Brand-Identity-3-hsla { color: hsla(39, 43, 91, 1); }
+.Livraria-Eiffel-Brand-Identity-4-hsla { color: hsla(39, 10, 72, 1); }
+.Livraria-Eiffel-Brand-Identity-5-hsla { color: hsla(0, 0, 5, 1); }
